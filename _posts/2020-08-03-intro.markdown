@@ -1,11 +1,11 @@
 ---
 title:        "L'hêtre à la loupe"
-subtitle:     "Optional subtitle here"
+subtitle:     "Episode 1 : Histoire et développement"
 date:         2020-08-03 16:29:02 +0800
 keywords:
 - tag1
 - tag2
-mp3-url:      "/assets/audio/intro.mp3"
+mp3-url:      "/assets/audio/les-filles-dangers-de-gilles-dor.mp3"
 episode-type: trailer # or "full"
 explicit:     "no"
 block:        "no" # no means it is published
@@ -15,4 +15,4 @@ excerpt_separator: <!--more-->
 Excerpt here.
 <!--more-->
 
-More details of your episode here.
+Dans ce premier épisode nous apprendrons à connaître les filles d'Angers
