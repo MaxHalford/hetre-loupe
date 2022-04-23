@@ -5,7 +5,7 @@ date:         2022-06-01 16:29:02 +0800
 keywords:
 - tag1
 - tag2
-mp3-url:      "/assets/audio/Teaser - Occitan en Limousin.mp3"
+mp3-url:      "/assets/audio/Teaser.mp3"
 episode-type: trailer # or "full"
 explicit:     "no"
 block:        "no" # no means it is published
