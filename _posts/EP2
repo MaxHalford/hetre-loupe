@@ -1,0 +1,16 @@
+---
+title:        "Occitan en Limousin"
+subtitle:     "Épisode 2 : Sauvegarder la langue au 21ème siècle"
+date:         2022-06-01 16:29:02 +0800
+keywords:
+- tag1
+- tag2
+mp3-url:      "/assets/audio/"
+episode-type: trailer # or "full"
+explicit:     "no"
+block:        "no" # no means it is published
+layout: podcast
+excerpt_separator: <!--more-->
+---
+Excerpt here.
+<!--more-->
