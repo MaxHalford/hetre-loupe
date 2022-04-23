@@ -32,11 +32,11 @@ layout: null
             <itunes:email>{{ site.email }}</itunes:email>
         </itunes:owner>
         <itunes:image href="{{ site.logo  | prepend: site.baseurl | prepend: site.url }}" />
-        <itunes:category text="Business">
-            <itunes:category text="Careers" />
+        <itunes:category text="Documentary">
+            <itunes:category text="Documentary" />
         </itunes:category>
-        <itunes:category text="Business">
-            <itunes:category text="Entrepreneurship" />
+        <itunes:category text="Documentary">
+            <itunes:category text="Documentary" />
         </itunes:category>
         <itunes:type>episodic</itunes:type>
         <itunes:explicit>no</itunes:explicit>
@@ -44,7 +44,8 @@ layout: null
             <item>
                 <title>{{ post.title | xml_escape }}</title>
                 <itunes:title>{{ post.title | xml_escape }}</itunes:title>
-                <description><![CDATA[{{ post.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]></description>
+                <
+                ><![CDATA[{{ post.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]></description>
                 <content:encoded><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></content:encoded>
                 <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
