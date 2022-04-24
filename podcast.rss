@@ -33,11 +33,9 @@ layout: null
             <itunes:email>{{ site.email }}</itunes:email>
         </itunes:owner>
         <itunes:image href="{{ site.logo  | prepend: site.baseurl | prepend: site.url }}" />
-        <itunes:category text="Documentary">
+        <itunes:category text="Society &amp; Culture">
             <itunes:category text="Documentary" />
-        </itunes:category>
-        <itunes:category text="Documentary">
-            <itunes:category text="Documentary" />
+            <itunes:category text="Personal Journals" />
         </itunes:category>
         <itunes:type>episodic</itunes:type>
         <itunes:explicit>no</itunes:explicit>
