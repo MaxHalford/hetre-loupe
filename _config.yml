@@ -14,9 +14,4 @@ logo: /assets/img/HALL.jpg
 exclude:
   - Gemfile
   - Gemfile.lock
-plugins:
-  - jekyll-feed
-title: Hêtre à la Loupe
-description: Documentaires radiophoniques limousins
-author: Paul Bureau et Corentin Mançois
-logo: /assets/img/HALL.jpg
+
