@@ -26,6 +26,7 @@ layout: null
         </image>
         <itunes:subtitle><![CDATA[{{ site.description | strip_html | expand_urls: site.url | cdata_escape }}]]></itunes:subtitle>
         <itunes:author>{{ site.author }}</itunes:author>
+        <itunes:email>{{ site.email }}</itunes:email>
         <itunes:summary><![CDATA[{{ site.description | strip_html | expand_urls: site.url | cdata_escape }}]]></itunes:summary>
         <itunes:keywords>{{ site.keywords }}</itunes:keywords>
         <itunes:owner>
