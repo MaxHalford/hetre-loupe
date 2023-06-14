@@ -1,5 +1,5 @@
 ---
 layout: default
 ---
-<h2>Episodes</h2>
+<h2>Épisodes</h2>
 {% include navigation.html %}

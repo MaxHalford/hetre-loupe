@@ -4,12 +4,13 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
-    xmlns:atom="http://www.w3.org/2005/Atom" 
-    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:spotify="http://www.spotify.com/ns/rss"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
     xml:lang="{{ site.lang }}">
     <channel>
-        <atom:link href="{{ "/podcast.rss" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
         <title>{{ site.title }}</title>
+        <atom:link href="{{ "/podcast.rss" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
         <description><![CDATA[{{ site.description | strip_html | expand_urls: site.url | cdata_escape }}]]></description>
         <link>{{ site.baseurl | prepend: site.url }}</link>
         <language>{{ site.lang }}</language>
@@ -25,6 +26,7 @@ layout: null
         </image>
         <itunes:subtitle><![CDATA[{{ site.description | strip_html | expand_urls: site.url | cdata_escape }}]]></itunes:subtitle>
         <itunes:author>{{ site.author }}</itunes:author>
+        <itunes:email>{{ site.email }}</itunes:email>
         <itunes:summary><![CDATA[{{ site.description | strip_html | expand_urls: site.url | cdata_escape }}]]></itunes:summary>
         <itunes:keywords>{{ site.keywords }}</itunes:keywords>
         <itunes:owner>
@@ -32,11 +34,9 @@ layout: null
             <itunes:email>{{ site.email }}</itunes:email>
         </itunes:owner>
         <itunes:image href="{{ site.logo  | prepend: site.baseurl | prepend: site.url }}" />
-        <itunes:category text="Business">
-            <itunes:category text="Careers" />
-        </itunes:category>
-        <itunes:category text="Business">
-            <itunes:category text="Entrepreneurship" />
+        <itunes:category text="Society &amp; Culture">
+            <itunes:category text="Documentary" />
+            <itunes:category text="Personal Journals" />
         </itunes:category>
         <itunes:type>episodic</itunes:type>
         <itunes:explicit>no</itunes:explicit>
@@ -49,7 +49,7 @@ layout: null
                 <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
                 <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-                <enclosure url="{{ post.mp3-url | prepend: site.baseurl | prepend: site.url }}" length="1" type="audio/mp3"/>
+                <enclosure url="{{ post.mp3-url }}" length="1" type="audio/mp3"/>
                 <itunes:author>{{ site.author }}</itunes:author>
                 <itunes:summary><![CDATA[{{ post.content | strip_html | expand_urls: site.url | cdata_escape }}]]></itunes:summary>
                 <itunes:subtitle><![CDATA[{{ post.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]></itunes:subtitle>
